@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f7f3ee;
+    color: #222;
+}
+
+header {
+    background-color: #1c1c1c;    
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}.frase {
+    max-width: 600px;
+    margin: 25px auto 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #5a1f2b;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+.libros {
+    margin-top: 40px;
+}
+
+.libro {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.portada {
+    width: 180px;
+    height: 260px;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-libro {
+    max-width: 500px;
+}
+
+.info-libro h3 {
+    font-size: 1.8rem;
+    color: #1c1c1c;
+}
