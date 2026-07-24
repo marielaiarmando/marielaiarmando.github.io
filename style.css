@@ -520,3 +520,16 @@ p {
     max-width: 600px;
     margin: 20px auto 30px;
 }
+
+.mensaje-enviado {
+    display: none;
+    margin: 30px auto 0;
+    max-width: 500px;
+    background: #f8fafb;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    color: #243746;
+    font-weight: bold;
+    text-align: center;
+}

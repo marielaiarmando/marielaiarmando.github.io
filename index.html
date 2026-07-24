@@ -390,9 +390,8 @@
     </p>
 
 
-    <form action="https://formspree.io/f/xdaqpnvq" method="POST">
+    <form id="formulario-contacto">
 
-    <input type="hidden" name="_next" value="gracias.html">
 
     <div class="formulario-contenedor">
 
@@ -423,8 +422,12 @@
 
 
     <button type="submit">
-        Enviar mensaje
-    </button>
+    Enviar mensaje
+</button>
+
+<p id="mensaje-enviado" class="mensaje-enviado">
+    ¡Gracias por escribirme! Tu mensaje llegó correctamente.
+</p>
 
 </form>
 
@@ -432,6 +435,39 @@
 </section>
 
 </main>
+
+<script>
+
+const formulario = document.getElementById("formulario-contacto");
+
+formulario.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const datos = new FormData(formulario);
+
+    const respuesta = await fetch(
+        "https://formspree.io/f/xdaqpnvq",
+        {
+            method: "POST",
+            body: datos,
+            headers: {
+                "Accept": "application/json"
+            }
+        }
+    );
+
+    if (respuesta.ok) {
+
+        formulario.reset();
+
+        document.getElementById("mensaje-enviado").style.display = "block";
+
+    }
+
+});
+
+</script>
 
 </body>
 
