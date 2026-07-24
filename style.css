@@ -1,77 +1,522 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
-    background-color: #f7f3ee;
+    background-color: #eef2f3; 
     color: #222;
 }
 
+
 header {
-    background-color: #1c1c1c;    
+    background-image: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("images/bosque_oscuro.jpg");
+
+    background-size: cover;
+    background-position: center;
+
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 90px 20px;
 }
 
+
 header h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 10px;
 }
 
+
 header p {
     font-size: 1.2rem;
-    font-style: italic;
-}.frase {
-    max-width: 600px;
-    margin: 25px auto 0;
-    font-size: 1.1rem;
-    opacity: 0.9;
 }
+
+
+.frase {
+    max-width: 650px;
+    margin: 25px auto 0;
+    font-style: italic;
+    opacity: .9;
+}
+
 
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
+
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
+
 h2 {
-    color: #5a1f2b;
-    font-size: 2rem;
+    color: #243746;
+    font-size: 2.2rem;
+    text-align: center;
 }
+
 
 p {
     line-height: 1.7;
     font-size: 1.1rem;
 }
-.libros {
+
+
+/* LIBRO */
+
+.libro {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.portada {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+    margin-top: 60px;
+}
+
+
+.info-libro {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.info-libro p {
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.info-libro h3 {
+    font-size: 2rem;
+}
+
+.genero {
+    color: #243746;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* BOTONES */
+
+.botones {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.boton {
+    display: inline-block;
+    background-color: #243746;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+
+.boton:hover {
+    opacity: .8;
+}
+
+/* RESEÑAS */
+
+.tarjetas {
+    display: flex;
+    gap: 25px;
+}
+
+
+.resena {
+    background:#f8fafb;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    flex:1;
+}
+
+
+.resena h3 {
+    color:#243746;
+}
+
+
+
+/* VIDEOS */
+
+.videos {
+    text-align: center;
+}
+
+.videos a {
+    color:#243746;
+    font-weight:bold;
+}
+
+
+.proximamente {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.proximamente h2 {
+    color: white;
+}
+
+.proximamente p {
+    max-width: 700px;
+    margin: auto;
+    color: white;
+}
+
+/* ANTOLOGÍAS */
+.intro-antologias {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+.grid-antologias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
     margin-top: 40px;
 }
 
-.libro {
+.antologia {
+    text-align: center;
+}
+
+.antologia img {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.info-antologia h3 {
+    margin-top: 15px;
+    color: #243746;
+}
+
+.info-antologia p {
+    margin-top: 10px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+}
+
+/* REDES */
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.redes a {
+    background-color: #243746;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+.redes a:hover {
+    opacity: .8;
+}.botones-resenas {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.botones-resenas a {
+    background-color: #243746;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+.botones-resenas a:hover {
+    opacity: .8;
+}.formato {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+
+}.autora {
     display: flex;
     gap: 40px;
     align-items: center;
 }
 
-.portada {
-    width: 180px;
-    height: 260px;
+
+.foto-autora {
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
 }
 
-.portada img {
+
+.texto-autora {
+    max-width: 600px;
+    text-align: justify;
+}
+/* BOOKTRAILER */
+
+.booktrailer {
+    margin: 35px 0;
+    text-align: center;
+}
+
+.booktrailer h3 {
+    color: #243746;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .libro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .info-libro {
-    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+    .portada {
+    margin: 0 auto;
+    }
+.info-libro .genero {
+    text-align: center;
+    width: 100%;
+}
+    .autora {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+
+    h2 {
+        text-align: center;
+    }
+
+
+    .botones {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .boton {
+        display: block;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+
+
+    .videos,
+    .contacto,
+    .redes {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .grid-antologias {
+        grid-template-columns: 1fr;
+    }
+
+    .antologia {
+    text-align: center;
 }
 
-.info-libro h3 {
-    font-size: 1.8rem;
-    color: #1c1c1c;
+
+    .antologia img {
+        width: 150px;
+    }
+
+
+    .botones-resenas {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+.video-container {
+    max-width: 100%;
+}
+
+
+.formulario-contenedor {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.datos-contacto,
+.formulario-contenedor textarea {
+    width: 100%;
+    max-width: 500px;
+
+}
+
+}
+
+
+
+.video-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.video-links a {
+    background: #243746;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.video-links a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+.contacto form {
+    margin-top: 40px;
+}
+.formulario-contenedor {
+    display: flex;
+    gap: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+
+.formulario-contenedor textarea {
+    width: 60%;
+}
+
+
+.contacto input,
+.contacto textarea {
+    padding: 12px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.contacto button {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #243746;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+}
+
+
+.contacto button:hover {
+    opacity: .8;
+}
+.mensaje-gracias {
+    display: none;
+    margin-top: 25px;
+    color: #243746;
+    font-weight: bold;
+    text-align: center;
+}
+.gracias {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.gracias h1 {
+    color: #243746;
+    font-size: 2.5rem;
+}
+
+
+.gracias p {
+    max-width: 600px;
+    margin: 20px auto 30px;
 }
