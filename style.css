@@ -533,3 +533,54 @@ p {
     font-weight: bold;
     text-align: center;
 }
+/* MENU DE NAVEGACION */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #1c1c1c;
+    padding: 15px;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.menu a:hover {
+    color: #c9a66b;
+}
+section {
+    scroll-margin-top: 100px;
+}
+.idioma {
+    text-align: right;
+    padding: 15px 40px;
+    background-color: #1c1c1c;
+}
+
+.idioma a {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #c9a66b;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.idioma a:hover {
+    background-color: #c9a66b;
+    color: #1c1c1c;
+}
