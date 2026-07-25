@@ -415,6 +415,22 @@ p {
 
 }
 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    column-gap: 18px;
+    row-gap: 0;
+
+    padding: 6px 10px;
+}
+
+.menu a {
+    font-size: 15px;
+    line-height: 1;
+    padding: 0;
+}
 }
 
 
